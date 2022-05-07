@@ -1,27 +1,24 @@
 import Head from 'next/head'
-import Image from 'next/image'
+
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export default function About() {
   return (
     <div className={styles.container}>
-            <Head>
+        <header>
+        <ul>
+          <a href="/about">About</a>
+        </ul>
+        </header>
+      <Head>
         <title>Make it happen</title>
         <meta name="description" content="rock your jaw" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-
-      <header>
-        <ul>
-          <a href="/about">About</a>
-        </ul>
-      </header>
- 
- 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          <code>Rock your jaw</code>
+          <code>You about to find out</code>
         </h1>
 
         <p className={styles.description}>
@@ -31,32 +28,10 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="#" className={styles.card}>
-            <h2>Software &rarr;</h2>
-            <p>projects of any kind</p>
+            <h2>Jonah &rarr;</h2>
+            <p>experience?</p>
           </a>
 
-          <a href="#" className={styles.card}>
-            <h2>Data &rarr;</h2>
-            <p>big</p>
-          </a>
-
-          <a
-            href="#"
-            className={styles.card}
-          >
-            <h2>Infrastructure &rarr;</h2>
-            <p>security</p>
-          </a>
-
-          <a
-            href="#"
-            className={styles.card}
-          >
-            <h2>Surfing &rarr;</h2>
-            <p>
-              when its good
-            </p>
-          </a>
         </div>
       </main>
 
