@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/image";
+import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
@@ -17,8 +17,12 @@ export default function Home() {
         </h1>
 
         <p className={styles.description}>
-          Everything&apos;s just ones and zeros. Nothing happens unless we make it happen.
-          <br/><br/><br/><code className={styles.code}>pages/index.js</code>
+          Everything&apos;s just ones and zeros. Nothing happens unless we make
+          it happen.
+          <br />
+          <br />
+          <br />
+          <code className={styles.code}>pages/index.js</code>
         </p>
 
         <div className={styles.grid}>
@@ -32,29 +36,19 @@ export default function Home() {
             <p>big</p>
           </a>
 
-          <a
-            href="#"
-            className={styles.card}
-          >
+          <a href="#" className={styles.card}>
             <h2>Infrastructure &rarr;</h2>
             <p>security</p>
           </a>
 
-          <a
-            href="#"
-            className={styles.card}
-          >
+          <a href="#" className={styles.card}>
             <h2>Surfing &rarr;</h2>
-            <p>
-              when its good
-            </p>
+            <p>when its good</p>
           </a>
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        
-      </footer>
+      <footer className={styles.footer}></footer>
     </div>
-  )
+  );
 }
