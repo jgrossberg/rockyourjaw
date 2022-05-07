@@ -1,15 +1,18 @@
-import Head from 'next/head'
+import Head from "next/head";
+import Link from "next/link";
 
-import styles from '../styles/Home.module.css'
+import styles from "../styles/Home.module.css";
 
 export default function About() {
   return (
     <div className={styles.container}>
-        <header>
+      <header>
         <ul>
-          <a href="/about">About</a>
+          <Link href="/about">
+            <a>about</a>
+          </Link>
         </ul>
-        </header>
+      </header>
       <Head>
         <title>Make it happen</title>
         <meta name="description" content="rock your jaw" />
@@ -22,8 +25,12 @@ export default function About() {
         </h1>
 
         <p className={styles.description}>
-          Everything&apos;s just ones and zeros. Nothing happens unless we make it happen.
-          <br/><br/><br/><code className={styles.code}>pages/index.js</code>
+          Everything&apos;s just ones and zeros. Nothing happens unless we make
+          it happen.
+          <br />
+          <br />
+          <br />
+          <code className={styles.code}>pages/index.js</code>
         </p>
 
         <div className={styles.grid}>
@@ -31,13 +38,10 @@ export default function About() {
             <h2>Jonah &rarr;</h2>
             <p>experience?</p>
           </a>
-
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        
-      </footer>
+      <footer className={styles.footer}></footer>
     </div>
-  )
+  );
 }
